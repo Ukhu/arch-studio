@@ -1,5 +1,11 @@
+import Button from "../components/Button";
+
 function Home() {
-  return <div>Hello World!</div>;
+  return (
+    <div>
+      <Button variant="normal">Hello</Button>
+    </div>
+  );
 }
 
 export default Home;

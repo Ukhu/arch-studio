@@ -1,0 +1,49 @@
+@import "../shared/index.scss";
+
+.btn {
+  @include body;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  width: 11.0625rem;
+  height: 4.5rem;
+  color: $white;
+  border: none;
+  cursor: pointer;
+
+  background-color: $blue-dark;
+
+  &:hover {
+    background-color: $grey-dark;
+  }
+
+  &:active {
+    background-color: $grey-light;
+  }
+}
+
+.btn_sm {
+  width: 5rem;
+  height: 5rem;
+}
+
+.btn_num {
+  color: $grey-medium;
+  background-color: $white;
+
+  &:hover {
+    background-color: $grey-xlight;
+  }
+
+  &:active {
+    background-color: $blue-dark;
+    color: $white;
+  }
+}
+
+.btn_icon {
+  font-size: 1.5rem;
+  color: $white;
+}
