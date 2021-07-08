@@ -3,7 +3,7 @@
   font-weight: bold;
   font-size: 200px;
   line-height: 1;
-  letter-spacing: -5;
+  letter-spacing: -5px;
 }
 
 @mixin h1 {
@@ -11,7 +11,7 @@
   font-weight: bold;
   font-size: 80px;
   line-height: 1;
-  letter-spacing: -2;
+  letter-spacing: -2px;
 }
 
 @mixin h2 {
@@ -19,7 +19,7 @@
   font-weight: bold;
   font-size: 56px;
   line-height: 1;
-  letter-spacing: -2;
+  letter-spacing: -2px;
 }
 
 @mixin h3 {
