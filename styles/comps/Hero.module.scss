@@ -1,0 +1,69 @@
+@import "../shared/index.scss";
+
+.hero {
+  position: relative;
+  height: 35rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+    height: 45rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin: 0 10.3125rem;
+  }
+}
+
+.hero_content {
+  position: absolute;
+  top: 0;
+  height: 35rem;
+  width: 100%;
+  padding: 6.875rem 2rem;
+  color: $white;
+  background-color: rgba($color: #000000, $alpha: 0.35);
+
+  @media screen and (min-width: $tablet) {
+    height: 45rem;
+    padding: 11.25rem 3.625rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding: 11.25rem 11.875rem;
+  }
+}
+
+.hero_title {
+  @include h1;
+  color: $white;
+  margin: 0;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 34rem;
+  }
+}
+
+.hero_description {
+  @include body;
+  color: $white;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 3.5rem;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 2.5rem;
+    max-width: 34rem;
+  }
+}
+
+.hero_selector {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  margin-left: -5rem;
+
+  @media screen and (min-width: $laptop) {
+    display: flex;
+  }
+}

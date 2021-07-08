@@ -9,9 +9,14 @@
 @mixin h1 {
   color: $blue-dark;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 48px;
   line-height: 1;
-  letter-spacing: -2px;
+  letter-spacing: -1.2px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 80px;
+    letter-spacing: -2px;
+  }
 }
 
 @mixin h2 {
