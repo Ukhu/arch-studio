@@ -1,0 +1,61 @@
+@import "../shared/index.scss";
+
+.featured {
+  margin: 0 2rem;
+  margin-bottom: 4.5rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+    margin-bottom: 12.5rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin: 0 10.3125rem;
+    margin-bottom: 12.5rem;
+  }
+}
+
+.featured_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 5.3125rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-bottom: 4rem;
+  }
+}
+
+.featured_title {
+  @include h2;
+}
+
+.featured_projects {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.featured_btn_mobile {
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.featured_btn {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}

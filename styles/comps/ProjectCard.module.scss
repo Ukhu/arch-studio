@@ -1,0 +1,83 @@
+@import "../shared/index.scss";
+
+.project_card {
+  position: relative;
+  width: 19.4375rem;
+  height: 15rem;
+  margin-bottom: 1.5rem;
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    width: 21.875rem;
+    height: 35rem;
+    margin-bottom: 0;
+  }
+}
+
+.project_image {
+  @media screen and (min-width: $laptop) {
+    display: none !important;
+  }
+}
+
+.project_image_desktop {
+  display: none !important;
+
+  @media screen and (min-width: $laptop) {
+    display: block !important;
+  }
+}
+
+.project_overlay {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.01%,
+    rgba(0, 0, 0, 0.499044) 100%
+  );
+}
+
+.project_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $white;
+}
+
+.project_name {
+  @include h3;
+  color: $white;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project_view_more {
+  @include body;
+  font-weight: normal;
+  color: $white;
+  opacity: 0.75;
+}
+
+.project_number {
+  display: none;
+  font-size: 200px;
+  line-height: 1;
+  letter-spacing: -5px;
+  color: $white;
+  margin: 0;
+  opacity: 0.5;
+
+  @media screen and (min-width: $tablet) {
+    display: inline;
+  }
+}

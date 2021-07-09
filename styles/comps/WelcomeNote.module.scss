@@ -77,9 +77,9 @@
 
 .welcome_img {
   display: none;
+  z-index: -1;
 
   @media screen and (min-width: $laptop) {
     display: block;
-    // margin-top: 6.5rem;
   }
 }

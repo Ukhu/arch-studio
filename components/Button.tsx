@@ -9,29 +9,31 @@ interface IFullBtn {
   variant: "normal" | "numbered";
   active?: boolean;
   children: React.ReactNode;
+  className?: string;
 }
 
 interface IShortBtn {
   variant: "short";
   active?: boolean;
   children?: React.ReactNode;
+  className?: string;
 }
 
 type IButtonProps = IFullBtn | IShortBtn;
 
-const Button = ({ children, variant, active }: IButtonProps) => {
+const Button = ({ children, variant, active, ...props }: IButtonProps) => {
   const isShort = variant === "short";
   const isNum = variant === "numbered";
   const isNormal = variant === "normal";
 
   return (
     <button
-      className={clsx(
+      className={`${clsx(
         btn,
         (isShort || isNum) && btn_sm,
         isNum && btn_num,
         active && btn_active
-      )}
+      )} ${props.className}`}
     >
       {children}
       {isNormal && <>&nbsp;&nbsp;</>}
