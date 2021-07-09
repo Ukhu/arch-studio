@@ -1,0 +1,82 @@
+@import "../shared/index.scss";
+
+.welcome {
+  margin: 0 2rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin: 0 10.3125rem;
+  }
+}
+
+.welcome_border {
+  width: 4.0625rem;
+  height: 1px;
+  background: $grey-light;
+  margin-bottom: 4.1875rem;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.welcome_banner {
+  display: none;
+  z-index: 1000;
+  @include h1-large;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.welcome_content_wrap {
+  @media screen and (min-width: $tablet) {
+    margin-top: -1.5rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-top: -6rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.welcome_content {
+  @media screen and (min-width: $laptop) {
+    margin-top: 5rem;
+    margin-right: 7.8125rem;
+    width: 28.875rem;
+  }
+}
+
+.welcome_heading {
+  @include h2;
+  margin: 0;
+  margin-bottom: 2rem;
+  color: $blue-dark;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.welcome_note {
+  @include body;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 2rem;
+  color: $grey-dark;
+}
+
+.welcome_img {
+  display: none;
+
+  @media screen and (min-width: $laptop) {
+    display: block;
+    // margin-top: 6.5rem;
+  }
+}
