@@ -1,0 +1,46 @@
+@import "../shared/index.scss";
+
+.banner {
+  position: relative;
+  height: 35rem;
+  margin-bottom: 4.5rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+    margin-bottom: 12.5rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin: 0 10.3125rem;
+    margin-bottom: 12.5rem;
+  }
+}
+
+.banner_content {
+  position: absolute;
+  top: 0;
+  height: 35rem;
+  width: 100%;
+  padding: 11.25rem 2rem;
+  color: $white;
+  background-color: rgba($color: #000000, $alpha: 0.35);
+
+  @media screen and (min-width: $tablet) {
+    padding: 11.25rem 4.375rem 11.25rem 3.625rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding: 11.25rem 11.875rem;
+  }
+}
+
+.banner_text {
+  @include h2;
+  color: $white;
+  margin: 0;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 27.8125rem;
+  }
+}
