@@ -8,6 +8,10 @@
 
   @media screen and (min-width: $tablet) {
     width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $laptop) {

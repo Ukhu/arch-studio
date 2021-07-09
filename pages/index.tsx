@@ -1,5 +1,6 @@
 import AboutBanner from "../components/AboutBanner";
 import Featured from "../components/Featured";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Tag from "../components/Tag";
@@ -14,6 +15,7 @@ function Home() {
       <WelcomeNote />
       <AboutBanner />
       <Featured />
+      <Footer />
     </div>
   );
 }

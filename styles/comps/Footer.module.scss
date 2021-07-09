@@ -1,0 +1,125 @@
+@import "../shared/index.scss";
+
+.footer {
+  width: 100%;
+  height: 23.9375rem;
+  padding: 0 3.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $grey-xlight;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    height: 7.5rem;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: initial;
+    height: 12.5rem;
+    margin: 0 10.3125rem;
+  }
+}
+
+.footer_content {
+  background-color: $grey-xlight;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 38.25rem;
+    height: 7.5rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 61.5rem;
+    height: 12.5rem;
+  }
+}
+
+.footer_logo {
+  display: grid;
+  place-items: center;
+  width: 7.5rem;
+  height: 7.5rem;
+  background-color: $blue-dark;
+  margin-top: -3.75rem;
+  padding: 2rem;
+
+  img {
+    filter: invert(92%) sepia(100%) saturate(34%) hue-rotate(66deg)
+      brightness(112%) contrast(100%);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+}
+
+.footer_menu_wrap {
+  height: 8.6875rem;
+  margin-top: 2rem;
+
+  @media screen and (min-width: $tablet) {
+    height: 100%;
+    margin-top: 0rem;
+    width: 19.75rem;
+    margin-left: 2.5rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 5.3125rem;
+  }
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 8.6875rem;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+  }
+}
+
+.footer_menu_item {
+  @include h3;
+  cursor: pointer;
+  color: $grey-medium;
+
+  @media screen and (min-width: $tablet) {
+    color: $grey-medium;
+
+    &:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.footer_btn {
+  width: 100%;
+  margin-bottom: 3rem;
+
+  @media screen and (min-width: $tablet) {
+    width: 15.75rem;
+    margin: 0;
+    position: absolute;
+    right: 0;
+  }
+}
