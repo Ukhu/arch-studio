@@ -3,14 +3,17 @@
 .hero {
   position: relative;
   height: 35rem;
+  margin-bottom: 4.5rem;
 
   @media screen and (min-width: $tablet) {
     margin: 0 6.0625rem;
+    margin-bottom: 4.625rem;
     height: 45rem;
   }
 
   @media screen and (min-width: $laptop) {
     margin: 0 10.3125rem;
+    margin-bottom: 5.9375rem;
   }
 }
 
