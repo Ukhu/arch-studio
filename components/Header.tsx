@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import style from "../styles/comps/Header.module.scss";
 
@@ -18,7 +19,12 @@ const Header = () => {
   return (
     <header className={style.header}>
       <div className={style.header_main}>
-        <Image src={ArchLogo} alt="Arch Studio Logo" />
+        <Link href="/">
+          <a>
+            <Image src={ArchLogo} alt="Arch Studio Logo" />
+          </a>
+        </Link>
+
         <HeaderMenu />
         <span className={style.header_btn}>
           <Image
@@ -44,7 +50,9 @@ const HeaderMenu = ({ mobile }: IHeaderMenuProps) => {
   return (
     <nav className={clsx(mobile ? mobile_menu : header_menu_wrap)}>
       <ul className={style.header_menu}>
-        <li className={style.header_menu_item}>Portfolio</li>
+        <li className={style.header_menu_item}>
+          <Link href="/portfolio">Portfolio</Link>
+        </li>
         <li className={style.header_menu_item}>About Us</li>
         <li className={style.header_menu_item}>Contact</li>
       </ul>

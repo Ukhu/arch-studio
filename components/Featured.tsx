@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Button from "./Button";
 import ProjectCard from "./ProjectCard";
 
@@ -8,9 +10,13 @@ const Featured = () => {
     <section className={style.featured}>
       <div className={style.featured_header}>
         <h2 className={style.featured_title}>Featured</h2>
-        <Button variant="normal" className={style.featured_btn}>
-          See All
-        </Button>
+        <Link href="/portfolio">
+          <a>
+            <Button variant="normal" className={style.featured_btn}>
+              See All
+            </Button>
+          </a>
+        </Link>
       </div>
 
       <div className={style.featured_projects}>
@@ -33,9 +39,13 @@ const Featured = () => {
           number={3}
         />
       </div>
-      <Button variant="normal" className={style.featured_btn_mobile}>
-        See All
-      </Button>
+      <Link href="/portfolio">
+        <a>
+          <Button variant="normal" className={style.featured_btn_mobile}>
+            See All
+          </Button>
+        </a>
+      </Link>
     </section>
   );
 };

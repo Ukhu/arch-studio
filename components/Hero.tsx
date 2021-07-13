@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
+
+import HeroImg from "../assets/images/image-hero-paramour.jpg";
 
 import Button from "./Button";
 
 import style from "../styles/comps/Hero.module.scss";
-
-import HeroImg from "../assets/images/image-hero-paramour.jpg";
 
 const Hero = () => {
   return (
@@ -16,7 +17,11 @@ const Hero = () => {
           Project made for an art museum near Southwest London. Project Paramour
           is a statement of bold, modern architecture.
         </p>
-        <Button variant="normal">See Our Portfolio</Button>
+        <Link href="/portfolio">
+          <a>
+            <Button variant="normal">See Our Portfolio</Button>
+          </a>
+        </Link>
       </div>
       <div className={style.hero_selector}>
         <Button variant="numbered" active>
