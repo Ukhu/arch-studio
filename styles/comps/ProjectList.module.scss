@@ -1,0 +1,27 @@
+@import "../shared/index.scss";
+
+.project_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 0 2rem;
+  margin-bottom: 8.25rem;
+  margin-top: 3.5rem;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 6.0625rem;
+    margin-bottom: 12.5rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin: 0 10.3125rem;
+    margin-bottom: 12.5rem;
+  }
+}

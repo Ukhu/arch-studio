@@ -5,12 +5,19 @@ import style from "../styles/comps/ProjectCard.module.scss";
 
 interface IProjectCardProps {
   name: string;
-  imgOne: StaticImageData;
-  imgTwo: StaticImageData;
-  number: number;
+  imgOne: string;
+  imgTwo: string;
+  number?: number;
+  dateCompleted?: string;
 }
 
-const ProjectCard = ({ name, imgOne, imgTwo, number }: IProjectCardProps) => {
+const ProjectCard = ({
+  name,
+  imgOne,
+  imgTwo,
+  number,
+  dateCompleted,
+}: IProjectCardProps) => {
   return (
     <div className={style.project_card}>
       <div className={style.project_image}>
@@ -35,10 +42,12 @@ const ProjectCard = ({ name, imgOne, imgTwo, number }: IProjectCardProps) => {
         <div className={style.project_detail}>
           <h3 className={style.project_name}>{name}</h3>
           <Link href="/" passHref>
-            <span className={style.project_view_more}>View All Projects</span>
+            <span className={style.project_view_more}>
+              {dateCompleted ? dateCompleted : "View All Projects"}
+            </span>
           </Link>
         </div>
-        <h4 className={style.project_number}>{number}</h4>
+        {number && <h4 className={style.project_number}>{number}</h4>}
       </div>
     </div>
   );
