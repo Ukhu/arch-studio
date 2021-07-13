@@ -1,15 +1,7 @@
-import style from "../styles/comps/Featured.module.scss";
-
-import DelSolImg from "../assets/images/image-del-sol.jpg";
-import TowerImg from "../assets/images/image-228b.jpg";
-import LeProtoImg from "../assets/images/image-prototype.jpg";
-
-import DelSolImg2 from "../assets/images/image-del-sol-desktop.jpg";
-import TowerImg2 from "../assets/images/image-228b-desktop.jpg";
-import LeProtoImg2 from "../assets/images/image-prototype-desktop.jpg";
-
 import Button from "./Button";
 import ProjectCard from "./ProjectCard";
+
+import style from "../styles/comps/Featured.module.scss";
 
 const Featured = () => {
   return (
@@ -24,20 +16,20 @@ const Featured = () => {
       <div className={style.featured_projects}>
         <ProjectCard
           name="Project Del Sol"
-          imgOne={DelSolImg}
-          imgTwo={DelSolImg2}
+          imgOne="/images/image-del-sol.jpg"
+          imgTwo="/images/desktop/image-del-sol.jpg"
           number={1}
         />
         <ProjectCard
           name="228B Tower"
-          imgOne={TowerImg}
-          imgTwo={TowerImg2}
+          imgOne="/images/image-228b.jpg"
+          imgTwo="/images/desktop/image-228b.jpg"
           number={2}
         />
         <ProjectCard
           name="Le Prototype"
-          imgOne={LeProtoImg}
-          imgTwo={LeProtoImg2}
+          imgOne="/images/image-prototype.jpg"
+          imgTwo="/images/desktop/image-prototype.jpg"
           number={3}
         />
       </div>
