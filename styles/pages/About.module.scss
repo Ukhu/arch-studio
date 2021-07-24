@@ -1,6 +1,8 @@
 @import "../shared/index.scss";
 
 .our_heritage {
+  display: flex;
+  justify-content: space-between;
   margin: 0 2rem;
   margin-bottom: 4.5rem;
 
@@ -12,6 +14,34 @@
   @media screen and (min-width: $laptop) {
     margin: 0 10.3125rem;
     margin-bottom: 10.9375rem;
+  }
+}
+
+.divider {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    background-color: #c8ccd8;
+    margin-bottom: 6.1875rem;
+    height: 1px;
+    width: 4.0625rem;
+  }
+}
+
+.our_heritage_content {
+  @media screen and (min-width: $laptop) {
+    margin-right: 7.75rem;
+  }
+}
+
+.our_heritage_image {
+  display: none;
+
+  @media screen and (min-width: $laptop) {
+    flex-shrink: 0;
+    width: 33.75rem;
+    display: block;
   }
 }
 
