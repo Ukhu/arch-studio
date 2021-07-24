@@ -1,0 +1,41 @@
+@import "../shared/index.scss";
+
+.page_hero {
+  position: relative;
+  margin-bottom: 8.25rem;
+}
+
+.page_hero_image {
+  height: 15rem;
+  background-image: url("../../assets/images/image-hero-about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page_hero_overlay {
+  background-color: rgba($color: #000000, $alpha: 0.35);
+  width: 100%;
+  height: 100%;
+}
+
+.page_hero_content {
+  padding-top: 5rem;
+  padding-left: 2rem;
+  margin-top: -2.1875rem;
+  margin-right: 2rem;
+  margin-bottom: 8.25rem;
+  background: #ffffff;
+}
+
+.page_hero_heading {
+  @include h2;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.page_hero_summary {
+  @include body;
+  margin: 0;
+  margin-bottom: 1rem;
+}
