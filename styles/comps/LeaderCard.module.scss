@@ -4,6 +4,38 @@
   position: relative;
 }
 
+.leader_card_image {
+  position: relative;
+
+  @media screen and (min-width: $laptop) {
+    cursor: pointer;
+  }
+}
+
+.leader_card_image_overlay {
+  display: none;
+}
+
+.leader_card_image:hover > .leader_card_image_overlay {
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+}
+
+.leader_card_icons_desktop {
+  display: flex;
+  filter: invert(92%) sepia(100%) saturate(34%) hue-rotate(66deg)
+    brightness(112%) contrast(100%);
+}
+
 .leader_card_name {
   @include h3;
   margin: 0;
@@ -19,6 +51,10 @@
 
 .leader_card_icons {
   display: flex;
+
+  @media screen and (min-width: $laptop) {
+    display: none;
+  }
 }
 
 .linkedin_icon {

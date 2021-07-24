@@ -14,12 +14,22 @@ interface ILeaderCardProps {
 function LeaderCard({ image, name, title }: ILeaderCardProps) {
   return (
     <div className={style.leader_card}>
-      <Image
-        src={image}
-        alt="One of our leaders"
-        layout="responsive"
-        objectFit="cover"
-      />
+      <div className={style.leader_card_image}>
+        <Image
+          src={image}
+          alt="One of our leaders"
+          layout="responsive"
+          objectFit="cover"
+        />
+        <div className={style.leader_card_image_overlay}>
+          <div className={style.leader_card_icons_desktop}>
+            <div className={style.linkedin_icon}>
+              <Image src={LinkedInIcon} alt="LinkedIn" objectFit="contain" />
+            </div>
+            <Image src={TwitterIcon} alt="Twitter" objectFit="contain" />
+          </div>
+        </div>
+      </div>
 
       <h3 className={style.leader_card_name}>{name}</h3>
       <p className={style.leader_card_title}>{title}</p>
