@@ -1,13 +1,19 @@
 import Head from "next/head";
 
+import JakeImg from "../assets/images/leaders/avatar-jake.jpg";
+import ThompsonImg from "../assets/images/leaders/avatar-thompson.jpg";
+import JacksonImg from "../assets/images/leaders/avatar-jackson.jpg";
+import MariaImg from "../assets/images/leaders/avatar-maria.jpg";
+
 import Tag from "../components/Tag";
 import Header from "../components/Header";
 import PageHero from "../components/PegeHero";
+import LeaderCard from "../components/LeaderCard";
 import Footer from "../components/Footer";
 
 import style from "../styles/pages/About.module.scss";
 
-function Home() {
+function About() {
   return (
     <div>
       <Head>
@@ -17,7 +23,10 @@ function Home() {
       <Header />
       <PageHero />
       <section className={style.our_heritage}>
-        <h2 className={style.our_heritage_heading}>Our Heritage</h2>
+        <h2 className={style.about_heading}>
+          <span>Our</span>
+          <span>Heritage</span>
+        </h2>
         <p className={style.our_heritage_summary}>
           Founded in 2007, we started as a trio of architects. Our complimentary
           skills and relentless attention to detail turned Arch into one of the
@@ -34,9 +43,37 @@ function Home() {
           project.
         </p>
       </section>
+      <section className={style.our_leaders}>
+        <h2 className={style.about_heading}>
+          <span>The</span>
+          <span>Leaders</span>
+        </h2>
+        <div>
+          <LeaderCard
+            image={JakeImg}
+            name="Jake Richards"
+            title="Chief Architect"
+          />
+          <LeaderCard
+            image={ThompsonImg}
+            name="Thompson Smith"
+            title="Head of Finance"
+          />
+          <LeaderCard
+            image={JacksonImg}
+            name="Jackson Rourke"
+            title="Lead Designer"
+          />
+          <LeaderCard
+            image={MariaImg}
+            name="Maria Simpson"
+            title="Senior Architect"
+          />
+        </div>
+      </section>
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default About;
