@@ -1,0 +1,107 @@
+@import "../shared/index.scss";
+
+.our_heritage {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  margin-bottom: 4.5rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+    margin-bottom: 10.9375rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin: 0 10.3125rem;
+    margin-bottom: 10.9375rem;
+  }
+}
+
+.divider {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    background-color: #c8ccd8;
+    margin-bottom: 6.1875rem;
+    height: 1px;
+    width: 4.0625rem;
+  }
+}
+
+.our_heritage_content {
+  @media screen and (min-width: $laptop) {
+    margin-right: 7.75rem;
+  }
+}
+
+.our_heritage_image {
+  display: none;
+
+  @media screen and (min-width: $laptop) {
+    flex-shrink: 0;
+    width: 33.75rem;
+    display: block;
+  }
+}
+
+.our_heritage_summary {
+  @include body;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 2rem;
+  }
+}
+
+.about_heading {
+  display: flex;
+  flex-direction: column;
+  @include h2;
+  margin: 0;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-right: 7.75rem;
+  }
+}
+
+.our_leaders {
+  margin: 0 2rem;
+  margin-bottom: 8.25rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+    margin-bottom: 12.5rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10.3125rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.our_leaders_profiles {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 2.5rem;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0.75rem;
+    row-gap: 4rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    column-gap: 2rem;
+  }
+}

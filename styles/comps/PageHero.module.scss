@@ -1,0 +1,122 @@
+@import "../shared/index.scss";
+
+.page_hero {
+  position: relative;
+  margin-bottom: 8.25rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+    margin-bottom: 12.5rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    margin: 0 10.3125rem;
+    margin-bottom: 12.5rem;
+  }
+}
+
+.page_hero_image {
+  height: 15rem;
+  background-image: url("../../assets/images/image-hero-about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: $tablet) {
+    height: 45rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    flex-shrink: 0;
+    width: 39.6875rem;
+  }
+}
+
+.page_hero_overlay {
+  background-color: rgba($color: #000000, $alpha: 0.35);
+  width: 100%;
+  height: 100%;
+}
+
+.page_hero_content {
+  position: relative;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  margin-top: -2.1875rem;
+  margin-right: 2rem;
+  margin-bottom: 4.5rem;
+  background: #ffffff;
+
+  @media screen and (min-width: $tablet) {
+    height: 26rem;
+    padding-left: 3.5625rem;
+    padding-top: 5.5rem;
+    margin-top: -26rem;
+    margin-right: 0;
+    margin-left: 3.5625rem;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $laptop) {
+    height: 31.4375rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 13.5625rem;
+    margin-left: -10.3125rem;
+    padding-left: 10.3125rem;
+  }
+}
+
+.page_hero_title {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    @include h1-large;
+    position: absolute;
+    top: -6.5rem;
+    right: 0;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $laptop) {
+    top: -5rem;
+    left: -0.9rem;
+  }
+}
+
+.divider {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    height: 1px;
+    width: 4.0625rem;
+    background-color: #c8ccd8;
+    margin-bottom: 4.625rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-top: 10rem;
+  }
+}
+
+.page_hero_heading {
+  @include h2;
+  margin: 0;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-bottom: 4rem;
+  }
+}
+
+.page_hero_summary {
+  @include body;
+  margin: 0;
+}
