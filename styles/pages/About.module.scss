@@ -1,0 +1,17 @@
+@import "../shared/index.scss";
+
+.our_heritage {
+  margin: 0 2rem;
+  margin-bottom: 8.25rem;
+}
+
+.our_heritage_heading {
+  @include h2;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.our_heritage_summary {
+  @include body;
+  margin-bottom: 1rem;
+}
