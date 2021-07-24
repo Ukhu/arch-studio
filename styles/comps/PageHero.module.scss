@@ -8,6 +8,12 @@
     margin: 0 6.0625rem;
     margin-bottom: 12.5rem;
   }
+
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    margin: 0 10.3125rem;
+    margin-bottom: 12.5rem;
+  }
 }
 
 .page_hero_image {
@@ -20,6 +26,11 @@
   @media screen and (min-width: $tablet) {
     height: 45rem;
   }
+
+  @media screen and (min-width: $laptop) {
+    flex-shrink: 0;
+    width: 39.6875rem;
+  }
 }
 
 .page_hero_overlay {
@@ -29,6 +40,7 @@
 }
 
 .page_hero_content {
+  position: relative;
   padding-top: 5rem;
   padding-left: 2rem;
   margin-top: -2.1875rem;
@@ -38,12 +50,55 @@
 
   @media screen and (min-width: $tablet) {
     height: 26rem;
-    padding: 0 3.5625rem;
-    padding-top: 10.1875rem;
+    padding-left: 3.5625rem;
+    padding-top: 5.5rem;
     margin-top: -26rem;
-    margin-right: -3.5625rem;
+    margin-right: 0;
     margin-left: 3.5625rem;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $laptop) {
+    height: 31.4375rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 13.5625rem;
+    margin-left: -10.3125rem;
+    padding-left: 10.3125rem;
+  }
+}
+
+.page_hero_title {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    @include h1-large;
+    position: absolute;
+    top: -6.5rem;
+    right: 0;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $laptop) {
+    top: -5rem;
+    left: -0.9rem;
+  }
+}
+
+.divider {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    height: 1px;
+    width: 4.0625rem;
+    background-color: #c8ccd8;
+    margin-bottom: 4.625rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-top: 10rem;
   }
 }
 
@@ -54,6 +109,10 @@
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-bottom: 4rem;
   }
 }
 

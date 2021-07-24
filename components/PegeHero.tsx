@@ -7,6 +7,8 @@ const PageHero = () => {
         <div className={style.page_hero_overlay} />
       </div>
       <div className={style.page_hero_content}>
+        <h1 className={style.page_hero_title}>About</h1>
+        <div className={style.divider} />
         <h2 className={style.page_hero_heading}>Your team of professionals</h2>
         <p className={style.page_hero_summary}>
           Our small team of world-class professionals will work with you every
