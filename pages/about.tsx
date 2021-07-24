@@ -48,7 +48,7 @@ function About() {
           <span>The</span>
           <span>Leaders</span>
         </h2>
-        <div>
+        <div className={style.our_leaders_profiles}>
           <LeaderCard
             image={JakeImg}
             name="Jake Richards"

@@ -3,6 +3,11 @@
 .page_hero {
   position: relative;
   margin-bottom: 8.25rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+    margin-bottom: 12.5rem;
+  }
 }
 
 .page_hero_image {
@@ -11,6 +16,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width: $tablet) {
+    height: 45rem;
+  }
 }
 
 .page_hero_overlay {
@@ -26,16 +35,29 @@
   margin-right: 2rem;
   margin-bottom: 4.5rem;
   background: #ffffff;
+
+  @media screen and (min-width: $tablet) {
+    height: 26rem;
+    padding: 0 3.5625rem;
+    padding-top: 10.1875rem;
+    margin-top: -26rem;
+    margin-right: -3.5625rem;
+    margin-left: 3.5625rem;
+    margin-bottom: 0;
+  }
 }
 
 .page_hero_heading {
   @include h2;
   margin: 0;
   margin-bottom: 1rem;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 3rem;
+  }
 }
 
 .page_hero_summary {
   @include body;
   margin: 0;
-  margin-bottom: 1rem;
 }
