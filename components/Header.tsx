@@ -56,7 +56,9 @@ const HeaderMenu = ({ mobile }: IHeaderMenuProps) => {
         <li className={style.header_menu_item}>
           <Link href="/about">About Us</Link>
         </li>
-        <li className={style.header_menu_item}>Contact</li>
+        <li className={style.header_menu_item}>
+          <Link href="/contact">Contact</Link>
+        </li>
       </ul>
     </nav>
   );

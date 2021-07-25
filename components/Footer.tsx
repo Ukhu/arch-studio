@@ -39,7 +39,9 @@ const FooterMenu = () => {
         <li className={style.footer_menu_item}>
           <Link href="/about">About Us</Link>
         </li>
-        <li className={style.footer_menu_item}>Contact</li>
+        <li className={style.footer_menu_item}>
+          <Link href="/contact">Contact</Link>
+        </li>
       </ul>
     </nav>
   );
