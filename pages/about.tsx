@@ -23,7 +23,12 @@ function About() {
       </Head>
       <Tag name="About" />
       <Header />
-      <PageHero />
+      <PageHero title="About" heading="Your team of professionals">
+        Our small team of world-class professionals will work with you every
+        step of the way. Strong relationships are at the core of everything we
+        do. This extends to the relationship our projects have with their
+        surroundings.
+      </PageHero>
       <section className={style.our_heritage}>
         <div className={style.our_heritage_content}>
           <div className={style.divider} />
