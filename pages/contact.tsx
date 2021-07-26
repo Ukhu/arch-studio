@@ -3,6 +3,7 @@ import Head from "next/head";
 import Tag from "../components/Tag";
 import Header from "../components/Header";
 import PageHero from "../components/PegeHero";
+import ContactDetails from "../components/ContactDetails";
 import Footer from "../components/Footer";
 
 function ContactUs() {
@@ -18,6 +19,7 @@ function ContactUs() {
         or give us a call. We have two offices, one in Texas and one in
         Tennessee. If you find yourself nearby, come say hello!
       </PageHero>
+      <ContactDetails />
       <Footer />
     </div>
   );

@@ -1,0 +1,121 @@
+@import "../shared/index.scss";
+
+.contact_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 2rem;
+  margin-bottom: 4.5rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 6.0625rem;
+    margin-bottom: 10.9375rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin: 0 10.3125rem;
+    margin-bottom: 10.9375rem;
+  }
+}
+
+.divider {
+  display: block;
+  background-color: #c8ccd8;
+  margin-bottom: 4.1875rem;
+  height: 1px;
+  width: 4.0625rem;
+}
+
+.contact_details_content {
+  @media screen and (min-width: $laptop) {
+    display: flex;
+  }
+}
+
+.contact_details_heading {
+  display: flex;
+  flex-direction: column;
+  @include h2;
+  margin: 0;
+  margin-bottom: 3rem;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 3rem;
+    flex-direction: row;
+
+    span:first-child {
+      margin-right: 1rem;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-right: 7.75rem;
+    flex-direction: column;
+  }
+}
+
+.contact_details_section {
+  @include body;
+  margin-bottom: 2.5rem;
+
+  h3 {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    &:first-child {
+      margin-right: 5rem;
+    }
+  }
+}
+
+.contact_details_section_content {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    display: block;
+
+    p:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.contact_details_section_btn {
+  background-color: transparent;
+  color: #1b1d23;
+  padding-left: 0;
+
+  &:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  svg {
+    stroke: #1b1d23;
+  }
+}
+
+.contact_details_section_group {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+  }
+}
