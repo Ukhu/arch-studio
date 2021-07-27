@@ -10,7 +10,13 @@ import style from "../styles/comps/Hero.module.scss";
 const Hero = () => {
   return (
     <section className={style.hero}>
-      <Image src={HeroImg} alt="Hero image" objectFit="cover" layout="fill" />
+      <Image
+        src={HeroImg}
+        alt="Hero image"
+        objectFit="cover"
+        layout="fill"
+        loading="eager"
+      />
       <div className={style.hero_content}>
         <h2 className={style.hero_title}>Project Paramour</h2>
         <p className={style.hero_description}>

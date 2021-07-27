@@ -9,6 +9,7 @@ interface IProjectCardProps {
   imgTwo: string;
   number?: number;
   dateCompleted?: string;
+  loading: "eager" | "lazy";
 }
 
 const ProjectCard = ({
@@ -17,6 +18,7 @@ const ProjectCard = ({
   imgTwo,
   number,
   dateCompleted,
+  loading,
 }: IProjectCardProps) => {
   return (
     <div className={style.project_card}>
@@ -26,6 +28,7 @@ const ProjectCard = ({
           alt="One of our projects"
           objectFit="cover"
           layout="fill"
+          loading={loading}
         />
       </div>
 
@@ -35,6 +38,7 @@ const ProjectCard = ({
           alt="One of our projects"
           objectFit="cover"
           layout="fill"
+          loading={loading}
         />
       </div>
 
